@@ -1,0 +1,47 @@
+{
+  "brand": "DecoFlowers",
+  "direction": "C1 — Внутренний сад",
+  "reference": "/workspace/work/premium-prospects/c-research/designs/DecoFlowers-C-1.png",
+  "status": "complete-all-four-assets-visually-inspected",
+  "provenance": "AI-generated illustrative art direction. These are not photographs of real DecoFlowers projects, products, installations or showroom.",
+  "assets": [
+    {
+      "key": "hero-portal",
+      "path": "dist/assets/hero-portal.webp",
+      "source": "/workspace/generated_images/exec-594bdf0e-df15-4744-a598-7a1308c533c8.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 327648,
+      "prompt": "Create ONE photorealistic premium architectural photograph based on the portal imagery in the attached website reference, not a screenshot or website. Portrait 3:4 composition. Tall softly chamfered architectural portal centered in a dark mineral charcoal wall, portal occupies about 70% of image height and 65% width, entire portal opening and threshold visible, no other openings. Warm sunlit limestone interior seen through portal, small realistic olive tree in large beautifully textured pale stone vase at right, lush lush foliage and hanging greenery on upper left, cream sofa distant left, dramatic warm morning sun beams falling across limestone floor. Deep near-black charcoal wall edges match #121916, softly lit carved stone portal edges. Sophisticated editorial interiors photography, true botanical textures, precise architecture, tactile material grains, physically realistic light and natural shadows, high photographic detail. No text, words, typography, logo, UI, watermark or labels anywhere. No humans.",
+      "original_source": "/workspace/generated_images/exec-7048c119-9ece-4a2c-a3f6-178808b2d837.png",
+      "qa_correction": "ImageGen targeted fade of outer wall and lower foreground floor into near #121715 charcoal canvas, interior/portal retained; original WebP archived as generated-originals/hero-portal-qa-baseline.webp."
+    },
+    {
+      "key": "room",
+      "path": "dist/assets/room.webp",
+      "source": "/workspace/generated_images/exec-3356d514-4498-48c2-bb12-961b4395fe4e.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 454500,
+      "prompt": "Generate a single photorealistic luxury interiors editorial photograph faithful to the botanical architectural world of the attached reference website. This is ONLY a photo asset, not a website or screenshot. Landscape 3:2. Spacious sunlit limestone living room with floor-to-ceiling glazing and sheer curtains left, natural olive tree in oversized ancient-looking stone vase, tropical green plants integrated thoughtfully, low ivory boucle sofa in lower left, tactile travertine low coffee table carrying a small dark ceramic vase of white hydrangeas. Warm morning sun from the left, realistic shadows across pale limestone floor, soft olive accent upholstered chair. Far right third of image is a warm plaster or limestone wall with only very subtle shadow, generous calm space to receive live typography later. Interior styling is restrained, sophisticated and believable, photography by an architecture magazine, material pores and botanical veins visible. No human, NO text or typography, logo, graphic, UI or watermark."
+    },
+    {
+      "key": "object",
+      "path": "dist/assets/object.webp",
+      "source": "/workspace/generated_images/exec-2214db03-ab54-446f-8e05-b5cf62603b7b.png",
+      "width": 1087,
+      "height": 1447,
+      "bytes": 350488,
+      "prompt": "Create one exquisitely photorealistic interiors detail photograph, portrait 3:4. Match the tactile botanical world and golden morning sunlight of the attached reference: a sculptural aged limestone vase, pale warm grey with porous stone texture, holds an artfully restrained composition of several white hydrangea heads and deep green branching leaves. Vase set on a travertine console or plinth at left foreground of a warm limestone room. Behind it softly defocused tall olive tree, sheer linen curtain, golden beam of morning sunlight through window. Composition centered with breathing room around whole vase and flowers, elegantly organic arrangement, realistic botanics and slight irregularities. Premium architecture editorial photography, shallow depth of field, believable optical bokeh, warm pale mineral palette, cinematic shadow. This must be ONLY a photographic image with no UI, text, typography, logo, watermark, labels, humans. Do not reproduce a website."
+    },
+    {
+      "key": "space",
+      "path": "dist/assets/space.webp",
+      "source": "/workspace/generated_images/exec-2df2430a-8ad2-4e56-bb25-fb86ca7e46b8.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 564820,
+      "prompt": "Generate one wide 16:9 photorealistic architecture editorial photograph from the same botanical interior world as the attached reference: warm limestone, aged stone, muted creamy tones and rich green foliage in golden morning sunlight. Picture a contemporary boutique hotel lounge or spacious private interior with a large beautifully curated planted green wall covering the central limestone recess, cascading ferns, varied leaf shapes, subtle branch forms and ivy, highly realistic leaf veins and imperfect textures. Low stone bench and minimal pale sofa in lower left, one large textured stone vase with olive branches at right, floor to ceiling daylight window at left, warm sun grazing the leaves and travertine floor. Tasteful integrated botanical composition, dramatic but refined, lots of layered depth, premium photographic realism rather than CGI gloss, impeccable material detail. No people. Output ONLY photograph: no words, numbers, logos, UI, watermark, labels, graphics."
+    }
+  ]
+}
