@@ -36,3 +36,13 @@ Editable request export preserves changed content. Motion pause/reduced-motion c
 Regenerated individual assets, added true brand content, responsive navigation. Incorrect phone in C2 source corrected. C3 uses photographic scope views, not a realtime3D construction model. Some source-oriented wording can be refined in future P3copy polish.
 
 final result: passed
+
+## S1 revision verification — 2026-10-11
+
+Implemented scope: pinned doorway-to-room portal; reversible opening/closing menu; real photographs in all six directions; six-photo official Instagram gallery with full-size viewer; compact contact and footer; official address; removal of public AI/provenance notices per user instruction.
+
+Evidence: `qa/revision-1/report.json` and final desktop/mobile screenshots. Chromium/Playwright at 1440×900, 390×844, 320×844: no horizontal overflow and no page errors. Portal's middle and final frames, entrance anchor, return scroll and pause/re-enable at a lower section passed. ScrollTrigger starts remain correct after accordion geometry changes. Native reduced-motion flow and native no-JS details passed. Menu animated intermediate opening/closing, Escape, focus restoration and links passed. All six accordion images and gallery photographs decode successfully. Viewer next arrow, Escape, focus return, dialog scroll unlocking and the prepared-request form passed.
+
+Axe WCAG A/AA findings: 0 for page, open menu, photo viewer and request result. First review found opacity on whole gallery figures reduced caption contrast; corrected by animating photos only. Mobile portal uses a smaller relative magnification because its portrait already fills most of the viewport; checked visually to cover the screen before room arrival.
+
+Final focused recheck: gallery anchors open the viewer with JS and original full photo without JS; revised mobile title wrap; Escape during menu opening; final asset/copy/manifest checks. Public generated artwork is not asserted to be a real installation. Source ledger remains internal. Address evidence in brand-content.json and asset-ledger.json.
