@@ -8,7 +8,7 @@
 
 /* S1: portal journey, illustrated directions and quieter contact chapter. */
 :root{--scroll-thumb:#697565;--scroll-track:#121715}html{scrollbar-color:var(--scroll-thumb) var(--scroll-track)}*::-webkit-scrollbar{width:10px;height:10px}*::-webkit-scrollbar-track{background:var(--scroll-track)}*::-webkit-scrollbar-thumb{background:var(--scroll-thumb);border:2px solid var(--scroll-track);border-radius:8px}*::-webkit-scrollbar-thumb:hover{background:#8b9787}
-.c1-hero{height:100svh;min-height:620px;isolation:isolate}.c1-arrival{position:absolute;inset:0;opacity:0;pointer-events:none;z-index:2}.c1-arrival img{height:100%;object-fit:cover;object-position:right center}.c1-portal{transform-origin:50% 45%;z-index:1}.c1-hero-heading,.c1-wordmark,.c1-dock{z-index:3}.c1-header{z-index:15}
+.c1-hero{height:100svh;min-height:620px;isolation:isolate}.c1-portal{transform-origin:50% 45%;z-index:1}.c1-hero-heading,.c1-wordmark,.c1-dock{z-index:3}.c1-header{z-index:15}
 .c1-menu{padding:65px 10vw 40px;display:flex;flex-direction:column;justify-content:center}.c1-menu-links{gap:8px}.c1-menu-links a{font-size:clamp(35px,5.5vw,67px);line-height:1.07}.c1-menu-links a:focus-visible{outline-offset:3px}.c1-menu-phone{margin-top:28px}.c1-menu-close{min-height:44px}.c1-menu-toggle{min-height:44px}
 .c1-directions{gap:8%;grid-template-columns:1fr 1.1fr;align-items:start}.c1-detail-content{padding-right:0}.c1-detail-image{width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:22px;background:var(--stone)}.c1-detail-content p{max-width:560px}.c1-detail-content a{margin-top:15px}.c1-accordion summary{list-style:none;padding-left:0;display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:68px}.c1-accordion summary::-webkit-details-marker{display:none}.c1-accordion summary:after{content:'+';font-size:23px;font-weight:300;flex:0 0 auto}.c1-accordion details[open] summary{list-style:none}.c1-accordion details[open] summary:after{content:'−'}
 .c1-contact{min-height:0;padding-top:75px;padding-bottom:65px}.c1-contact h2{font-size:clamp(60px,7.5vw,115px);margin-top:25px}.c1-contact-bottom{margin-top:38px}.c1-phone{margin-top:22px}.c1-footer{padding-top:20px;padding-bottom:20px;gap:35px}.c1-footer address{font-style:normal;font-size:11px}.c1-footer>a:last-child{margin-left:auto}
@@ -23,3 +23,10 @@
 @media(max-width:350px){.c1-directions .c1-detail-content{display:block}.c1-directions .c1-detail-image{height:250px;margin:0 auto 20px;width:100%}}
 @media(min-width:701px){.c1-directions .c1-section-heading h2{font-size:clamp(50px,4.2vw,82px)}}
 @media(max-width:700px){.c1-examples-header h2{font-size:clamp(34px,10vw,46px)}}
+
+/* The doorway and room are one chapter. There is no duplicated arrival image. */
+.c1-journey{position:relative}.c1-stage{position:relative;height:100svh;min-height:620px;overflow:hidden;isolation:isolate}.c1-stage .c1-room{position:absolute;inset:0;height:100%;min-height:0;z-index:0}.c1-stage .c1-room-copy{min-height:100%;height:100%}.c1-stage .c1-hero{position:absolute;inset:0;height:100%;min-height:0;z-index:2;pointer-events:none}.c1-stage .c1-hero a{pointer-events:auto}.c1-stage .c1-portal{box-shadow:0 0 0 200vmax var(--canvas);height:76%;width:min(58svh,48vw);max-height:none;overflow:visible}.c1-stage .c1-portal img{height:100%;object-fit:fill;pointer-events:none}
+body:not(.c1-portal-active) .c1-stage .c1-hero{clip-path:inset(50%);width:1px;height:1px;overflow:hidden}body:not(.c1-portal-active) .c1-header-brand{opacity:1;pointer-events:auto}
+@media(max-width:700px){.c1-stage .c1-portal{top:7%;width:86vw;max-width:420px;height:62%}.c1-stage .c1-room-copy{height:auto;min-height:0}.c1-stage .c1-room{min-height:0}.c1-stage .c1-hero-heading{top:71%}}
+@media(max-width:350px){.c1-stage .c1-portal{width:94vw}}
+.c1-stage .c1-portal img{object-fit:cover;object-position:top center}

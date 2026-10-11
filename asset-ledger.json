@@ -136,5 +136,12 @@
       "type": "Actual official DecoFlowers Instagram media; locally saved to avoid expiring CDN dependencies"
     }
   ],
-  "public_provenance_ui": "Removed on explicit user request, 2026-10-11. Generated architectural scenes remain illustrative, not attributed as actual installations."
+  "public_provenance_ui": "Removed on explicit user request, 2026-10-11. Generated architectural scenes remain illustrative, not attributed as actual installations.",
+  "portal_frame_revision": {
+    "path": "dist/assets/portal-frame.webp",
+    "source": "/workspace/generated_images/exec-3112f1fb-78b0-46be-b87d-1d6bf5f57a68.png",
+    "type": "ImageGen transparent aperture edit of original hero; opaque stone frame and exterior retained",
+    "alpha_verified": true,
+    "room_compositing": "Single existing room.webp img behind frame in the same pinned stage. No arrival copy and no crossfade."
+  }
 }

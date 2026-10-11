@@ -46,3 +46,9 @@ Evidence: `qa/revision-1/report.json` and final desktop/mobile screenshots. Chro
 Axe WCAG A/AA findings: 0 for page, open menu, photo viewer and request result. First review found opacity on whole gallery figures reduced caption contrast; corrected by animating photos only. Mobile portal uses a smaller relative magnification because its portrait already fills most of the viewport; checked visually to cover the screen before room arrival.
 
 Final focused recheck: gallery anchors open the viewer with JS and original full photo without JS; revised mobile title wrap; Escape during menu opening; final asset/copy/manifest checks. Public generated artwork is not asserted to be a real installation. Source ledger remains internal. Address evidence in brand-content.json and asset-ledger.json.
+
+## Portal correction — same-day follow-up
+
+Supersedes the earlier crossfade approach: the initial doorway photo now has a transparent aperture; its stone/exterior layer covers one room photograph in a single pinned stage. `.c1-arrival` is removed and room.webp occurs once in the HTML. There is no second room chapter after the transition. The first following section is Object.
+
+Evidence: `qa/portal-r2/report.json`, opening/intermediate/finished/next screenshots at 1440×900, 390×844 and 320×844. Browser errors 0, horizontal overflow 0. True RGBA aperture centre alpha=0 and opaque wall alpha>240 verified. Frame magnification, reverse navigation, entry button, menu room anchor, clickable room CTA, pin release into Object, pause and re-enable at a lower chapter all passed. Reduced-motion and no-JS show the sole room directly. Axe A/AA findings 0 at opening and finished room. Final focused checks retain original frame proportions, direct #room entry and resize behavior.

@@ -33,36 +33,48 @@ const motionButton=document.querySelector('.c1-motion');let motionContext,paused
 function stableGeometry(fn){const x=scrollX,y=scrollY;scrollTo({left:x,top:y,behavior:'instant'});fn();scrollTo({left:x,top:y,behavior:'instant'})}
 function refreshGeometry(){if(window.ScrollTrigger)stableGeometry(()=>ScrollTrigger.refresh())}
 function configureMotion(){
- const room=document.querySelector('#room'),roomBefore=room.getBoundingClientRect().top;const belowPortal=roomBefore<0;
+ const following=document.querySelector('#object'),before=following.getBoundingClientRect().top;
+ const prior=window.ScrollTrigger?.getById('c1-portal-journey');
+ const insidePortal=!!prior&&scrollY>=prior.start&&scrollY<=prior.end;
+ const belowPortal=before<innerHeight;
+ const off=reduced.matches||paused||!window.gsap||!window.ScrollTrigger;
  stableGeometry(()=>{
   if(motionContext){motionContext.revert();motionContext=null}
+  document.body.classList.toggle('c1-portal-active',!off);
   motionButton.hidden=!window.gsap||!window.ScrollTrigger||reduced.matches;motionButton.setAttribute('aria-pressed',String(paused));motionButton.textContent=paused?'Включить движение':'Остановить движение';
-  if(reduced.matches||paused||!window.gsap||!window.ScrollTrigger)return;
+  if(off)return;
   gsap.registerPlugin(ScrollTrigger);
   motionContext=gsap.context(()=>{
-   const hero=document.querySelector('.c1-hero'),portal=document.querySelector('.c1-portal');
-   const journey=gsap.timeline({scrollTrigger:{id:'c1-portal-journey',trigger:hero,start:'top top',end:()=>'+='+Math.round(innerHeight*(innerWidth<700?1.05:1.35)),pin:true,scrub:.55,anticipatePin:1,invalidateOnRefresh:true}});
-   journey.to('.c1-hero-heading,.c1-wordmark,.c1-dock',{opacity:0,y:-24,duration:.23,ease:'power1.out'},0)
-    .to(portal,{scale:()=>Math.max(innerWidth/(portal.offsetWidth*.5),innerHeight/(portal.offsetHeight*.7))*1.35,y:()=>innerHeight*.5-(portal.offsetTop+portal.offsetHeight*.45),duration:.88,ease:'power1.in'},0)
-    .fromTo('.c1-arrival',{opacity:0,scale:1.1},{opacity:1,scale:1,duration:.2,ease:'power1.inOut'},.8);
-   gsap.fromTo('.c1-room-copy',{opacity:0,y:36},{opacity:1,y:0,duration:1,ease:'none',scrollTrigger:{trigger:room,start:'top 90%',end:'top 40%',scrub:.5}});
+   const stage=document.querySelector('.c1-stage'),portal=document.querySelector('.c1-portal');
+   // One real room layer remains in place behind the hollow frame. The frame
+   // clears the viewport, then this same pinned stage scrolls into the next chapter.
+   const journey=gsap.timeline({scrollTrigger:{id:'c1-portal-journey',trigger:'.c1-journey',start:'top top',end:()=>'+='+Math.round(innerHeight*(innerWidth<700?1.5:1.7)),pin:stage,scrub:.45,anticipatePin:1,invalidateOnRefresh:true}});
+   journey.to('.c1-hero-heading,.c1-wordmark,.c1-dock',{autoAlpha:0,y:-24,duration:.2,ease:'power1.out'},0)
+    .to(portal,{scale:()=>Math.max(innerWidth/(portal.offsetWidth*.56),innerHeight/(portal.offsetHeight*.76))*1.6,y:()=>stage.offsetHeight*.5-(portal.offsetTop+portal.offsetHeight*.45),duration:.72,ease:'power1.inOut'},0)
+    .fromTo('.c1-room-copy',{autoAlpha:0,y:28},{autoAlpha:1,y:0,duration:.18,ease:'power1.out'},.7)
+    .to({}, {duration:.12});
    document.querySelectorAll('.c1-scene:not(.c1-room)').forEach(scene=>gsap.fromTo(scene.querySelector('.c1-scene-image'),{scale:1.07},{scale:1,ease:'none',scrollTrigger:{trigger:scene,start:'top bottom',end:'bottom top',scrub:1}}));
    document.querySelectorAll('.c1-example').forEach(el=>gsap.fromTo(el.querySelector('.c1-example-photo'),{opacity:.55,y:30},{opacity:1,y:0,ease:'none',scrollTrigger:{trigger:el,start:'top 98%',end:'top 73%',scrub:.5}}));
   });
   ScrollTrigger.refresh();
  });
- if(belowPortal)scrollTo({top:scrollY+room.getBoundingClientRect().top-roomBefore,behavior:'instant'});
+ if(off&&insidePortal)scrollTo({top:0,behavior:'instant'});
+ else if(belowPortal)scrollTo({top:scrollY+following.getBoundingClientRect().top-before,behavior:'instant'});
 }
+function roomPosition(){const portal=window.ScrollTrigger?.getById('c1-portal-journey');return portal?portal.start+(portal.end-portal.start)*.91:document.querySelector('#room').getBoundingClientRect().top+scrollY}
 motionButton.addEventListener('click',()=>{paused=!paused;configureMotion()});reduced.addEventListener('change',configureMotion);configureMotion();
 let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(configureMotion,220)});
-document.fonts.ready.then(refreshGeometry);
+function restoreRoomHash(){if(location.hash==='#room')requestAnimationFrame(()=>scrollTo({top:roomPosition(),behavior:'instant'}))}
+document.fonts.ready.then(()=>{refreshGeometry();restoreRoomHash()});
+addEventListener('hashchange',restoreRoomHash);
+addEventListener('popstate',restoreRoomHash);
 // Retain no-JS anchors, and animate only deliberate navigation clicks.
 document.querySelectorAll('a[href^="#"]:not([data-subject])').forEach(link=>link.addEventListener('click',async e=>{
  if(e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
  const target=document.getElementById(link.hash.slice(1));if(!target)return;e.preventDefault();
  if(menu.contains(link))await closeMenu(false);
  history.pushState(null,'',link.hash);
- const top=link.hash==='#home'?0:target.getBoundingClientRect().top+scrollY;
+ const top=link.hash==='#home'?0:link.hash==='#room'?roomPosition():target.getBoundingClientRect().top+scrollY;
  scrollTo({top,behavior:reduced.matches||paused?'instant':'smooth'});
  if(menu.contains(link)){target.setAttribute('tabindex','-1');target.focus({preventScroll:true})}
 }));
