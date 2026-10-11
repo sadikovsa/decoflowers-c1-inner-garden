@@ -1,7 +1,17 @@
-# DecoFlowers — Внутренний сад (C1)
+# DecoFlowers — Внутренний сад · Ташкент
 
-Independent static implementation of approved displayed design 1. `npm run dev -- --host 0.0.0.0 --port 4173 --strictPort` serves `dist`. No build dependencies or external CDN. `npm run build` verifies JavaScript syntax.
+GitHub Pages target (publication pending): https://sadikovsa.github.io/decoflowers-c1-inner-garden/
 
-Core flow: native scene navigation → six direction accordions → showroom contact or enquiry dialog → editable text → copy/download → official Instagram or phone. Enquiries are never represented as transmitted. Illustrative scenes and real showroom photo are distinguished on page and in sources.html.
+Approved DecoFlowers design, with real brand photography, local assets and verified contact information.
 
-Fonts and GSAP/ScrollTrigger are self-hosted in assets. Native HTML content, links, details and phone/Instagram remain usable without JavaScript. Reduced motion and visible animation pause supported. Reference and browser comparison QA are coordinated by root agent before delivery.
+## Preview locally
+
+Run `python3 -m http.server 4173 --directory dist` and open http://localhost:4173/. Static HTML/CSS/JavaScript; no dependency installation or build required. Check JavaScript with `node --check dist/app.js`.
+
+## GitHub Pages
+
+`main` contains editable sources, design decisions and QA. `gh-pages` contains only the verified `dist/` snapshot. Pages is configured to serve the root of `gh-pages`. Relative asset paths support the repository URL. To publish an update, verify the source, commit `main`, then publish the same `dist` snapshot to `gh-pages`.
+
+The brief dialog prepares editable text for copying/downloading; it does not send inquiries to a server. Brand phone and Instagram links work independently.
+
+See `SEO.md` for indexing policy, `DESIGN.md` for approved design, and `qa/` for verification evidence. Earlier reports describe historical revisions. The original Git history is retained.
