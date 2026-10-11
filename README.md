@@ -1,6 +1,6 @@
 # DecoFlowers — Внутренний сад · Ташкент
 
-GitHub Pages target (publication pending): https://sadikovsa.github.io/decoflowers-c1-inner-garden/
+GitHub Pages: https://sadikovsa.github.io/decoflowers-c1-inner-garden/
 
 Approved DecoFlowers design, with real brand photography, local assets and verified contact information.
 

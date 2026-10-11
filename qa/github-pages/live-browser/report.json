@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-11T21:10:16.267Z",
+  "checks": [
+    {
+      "mode": {
+        "width": 1440,
+        "js": true,
+        "reduced": false
+      },
+      "overflow": false,
+      "h1Count": 1,
+      "h1Width": 1425,
+      "canonical": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/"
+    },
+    {
+      "mode": {
+        "width": 390,
+        "js": true,
+        "reduced": false
+      },
+      "overflow": false,
+      "h1Count": 1,
+      "h1Width": 345,
+      "canonical": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/"
+    },
+    {
+      "mode": {
+        "width": 390,
+        "js": false,
+        "reduced": false
+      },
+      "overflow": false,
+      "h1Count": 1,
+      "h1Width": 328.21875,
+      "canonical": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/"
+    },
+    {
+      "mode": {
+        "width": 390,
+        "js": true,
+        "reduced": true
+      },
+      "overflow": false,
+      "h1Count": 1,
+      "h1Width": 0,
+      "canonical": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/"
+    }
+  ],
+  "errors": []
+}

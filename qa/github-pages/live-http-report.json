@@ -1,0 +1,192 @@
+{
+  "repo": "decoflowers-c1-inner-garden",
+  "base_url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/",
+  "verified_at": "2026-10-11T21:08:18.673157+00:00",
+  "canonical": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/",
+  "robots": "noindex,follow",
+  "files": [
+    {
+      "file": "styles.css",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/styles.css",
+      "status": 200,
+      "mime": "text/css",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "app.js",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/app.js",
+      "status": 200,
+      "mime": "application/javascript",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "index.html",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/",
+      "status": 200,
+      "mime": "text/html",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-orchid-tree.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-orchid-tree.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/Manrope-OFL.txt",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/Manrope-OFL.txt",
+      "status": 200,
+      "mime": "text/plain",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/cormorant.ttf",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/cormorant.ttf",
+      "status": 200,
+      "mime": "font/ttf",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-courtyard.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-courtyard.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/room.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/room.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/social-preview.png",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/social-preview.png",
+      "status": 200,
+      "mime": "image/png",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/object.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/object.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/Cormorant-OFL.txt",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/Cormorant-OFL.txt",
+      "status": 200,
+      "mime": "text/plain",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/space.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/space.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-blue-composition.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-blue-composition.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/gsap.min.js",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/gsap.min.js",
+      "status": 200,
+      "mime": "application/javascript",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/hero-portal.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/hero-portal.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/ScrollTrigger.min.js",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/ScrollTrigger.min.js",
+      "status": 200,
+      "mime": "application/javascript",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/real-entrance.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/real-entrance.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/portal-frame.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/portal-frame.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-white-orchids.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-white-orchids.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/manrope.ttf",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/manrope.ttf",
+      "status": 200,
+      "mime": "font/ttf",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-chrysanthemums.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-chrysanthemums.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-garden-arch.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-garden-arch.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/real-showroom.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/real-showroom.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-greenery.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-greenery.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-bamboo.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-bamboo.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    },
+    {
+      "file": "assets/brand-boxwood.webp",
+      "url": "https://sadikovsa.github.io/decoflowers-c1-inner-garden/assets/brand-boxwood.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "exact_bytes_match": true
+    }
+  ],
+  "failures": []
+}
